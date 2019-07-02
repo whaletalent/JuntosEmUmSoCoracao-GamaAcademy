@@ -1,15 +1,16 @@
 import React, {Component, Fragment} from 'react'
 import {Navbar, Container, Button} from 'rbx'
+import Scroll from 'react-scroll-to-element'
 
 export default class NavMenu extends Component{
     state={
         menuItems: [
-            'Quero ser um voluntário',
-            'Seja um patrocinador',
-            'Disk Help',
-            'Ações Voluntárias',
-            'Galeria',
-            'Contato',
+            {label: 'Quem Somos', section: 'section1'},
+            {label: 'Quero ser um voluntário', section: 'section2'},
+            {label: 'Doações', section: 'section3'},
+            {label: 'Seja um Patrocinador', section: 'section4'},
+            {label: 'Galeria', section: 'section5'},
+            {label: 'Contato', section: 'section6'},
         ]
     }
     render(){
@@ -33,9 +34,11 @@ export default class NavMenu extends Component{
                             this.state.menuItems.map( item =>{
                                 return(
                                     //usar 'active' na tag para marcar o item ativado do menu
-                                    <Navbar.Item index={item.index} key={item.index}>
-                                        {item}
-                                    </Navbar.Item>
+                                    <Scroll type="id" element={item.section}>
+                                        <Navbar.Item index={item.index} key={item.index}>
+                                            {item.label}
+                                        </Navbar.Item>
+                                    </Scroll>
                                 )
                             })
                         }

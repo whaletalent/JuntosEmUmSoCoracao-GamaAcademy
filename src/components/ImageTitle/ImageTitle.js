@@ -10,6 +10,7 @@ export default class ImageTitle extends Component{
         return(
             <Fragment>
                 <Hero size="medium"
+                    id={this.props.index}
                     style={this.image}
                 >
                     <Hero.Body>
