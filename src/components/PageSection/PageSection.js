@@ -55,14 +55,15 @@ export default class PageSection extends Component{
                 {
                     this.state.contents.map(content =>{
                         return(
-                            <Fragment>
+                            <Fragment key={content.sectionId}>
                                 <ImageTitle
                                     index={content.sectionId}
                                     title={content.sectionTitle} 
                                     subtitle={content.sectionSubtitle} 
                                     image={content.imageUrl}
-                                />
-                                <SectionContent textContent={content.sectionText}></SectionContent>
+                                >
+                                    <SectionContent textContent={content.sectionText}></SectionContent>
+                                </ImageTitle>
                             </Fragment>
                         )
                     })

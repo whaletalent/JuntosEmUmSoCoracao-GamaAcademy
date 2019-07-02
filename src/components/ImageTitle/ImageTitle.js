@@ -22,6 +22,7 @@ export default class ImageTitle extends Component{
                     </Container>
                     </Hero.Body>
                 </Hero>
+                {this.props.children}
             </Fragment>
         )
     }
