@@ -1,6 +1,6 @@
 {
   "name": "ong-jsc-site",
-  "version": "0.1.0",
+  "version": "8.15.1",
   "private": true,
   "dependencies": {
     "rbx": "^2.2.0",
