@@ -3,7 +3,7 @@ import {Hero, Container, Title} from 'rbx'
 
 export default class ImageTitle extends Component{
     image ={
-        backgroundImage: "url(https://images.pexels.com/photos/889087/pexels-photo-889087.jpeg)",
+        backgroundImage: `url(${this.props.image})`,
         backgroundSize: 'cover'
     }
     render(){
