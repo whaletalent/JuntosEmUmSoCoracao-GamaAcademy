@@ -45,6 +45,7 @@ export default class PageSection extends Component{
                 iaculis mauris.`,
                 imageUrl: 'https://bulma.io/images/placeholders/1280x960.png'
             }
+            
         ]
 
     }

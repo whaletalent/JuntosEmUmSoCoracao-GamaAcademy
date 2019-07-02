@@ -9,7 +9,7 @@ export default class NavMenu extends Component{
             {label: 'Quero ser um voluntário', section: 'section2'},
             {label: 'Doações', section: 'section3'},
             {label: 'Seja um Patrocinador', section: 'section4'},
-            {label: 'Galeria', section: 'section5'},
+            {label: 'Notícias', section: 'section5'},
             {label: 'Contato', section: 'section6'},
         ]
     }
