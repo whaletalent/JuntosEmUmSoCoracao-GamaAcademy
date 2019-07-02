@@ -37,14 +37,14 @@ export default class NavMenu extends Component{
                             })
                         }
                         <Navbar.Item as="span">
-                        <Button color="primary" inverted>
+                        <Button color="default-blue" inverted>
                             <span>Doar</span>
                         </Button>
                         </Navbar.Item>
                     </Navbar.Segment>
                     </Navbar.Menu>
                 </Container>
-                </Navbar>;
+                </Navbar>
             </Fragment>
         )
     }
