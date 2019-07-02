@@ -32,7 +32,10 @@ export default class NavMenu extends Component{
                         {
                             this.state.menuItems.map( item =>{
                                 return(
-                                    <Navbar.Item active>{item}</Navbar.Item>
+                                    //usar 'active' na tag para marcar o item ativado do menu
+                                    <Navbar.Item index={item.index} key={item.index}>
+                                        {item}
+                                    </Navbar.Item>
                                 )
                             })
                         }

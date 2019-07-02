@@ -1,6 +1,6 @@
 import React, {Component, Fragment} from 'react'
 import {Hero, Container, Title } from 'rbx'
-import NavMenu from './NavMenu'
+import NavMenu from '../NavMenu/NavMenu'
 
 export default class HeroSection extends Component{
     render(){

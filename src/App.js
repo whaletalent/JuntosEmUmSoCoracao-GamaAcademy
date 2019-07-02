@@ -1,12 +1,15 @@
-import React from "react";
-import logo from "./logo.svg";
+import React, {Fragment} from "react";
 import "./App.scss";
-import HeroSection from './components/HeroSection'
+import HeroSection from './components/HeroSection/HeroSection'
+import ImageTitle from './components/ImageTitle/ImageTitle';
 
 
 function App() {
   return (
-    <HeroSection/>
+    <Fragment>
+      <HeroSection/>
+      <ImageTitle title="Titulo" subtitle="Subtitulo"></ImageTitle>
+    </Fragment>
   );
 }
 
