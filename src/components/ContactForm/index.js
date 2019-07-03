@@ -37,14 +37,15 @@ export default class ContactForm extends Component {
     return (
       <Fragment>
         <Column.Group centered>
-          <Column size="half">
+          <Column size="full">
             <form onSubmit={this.handleSubmit} type="post">
               <Field horizontal>
-                <Field.Label size="normal" />
+                
                 <Field.Body>
                   <Field>
                     <Control expanded iconLeft>
                       <Input
+                        required
                         type="text"
                         name="name"
                         placeholder="Nome"
@@ -57,11 +58,12 @@ export default class ContactForm extends Component {
                 </Field.Body>
               </Field>
               <Field horizontal>
-                <Field.Label size="normal" />
+                
                 <Field.Body>
                   <Field>
                     <Control expanded iconLeft iconRight>
                       <Input
+                        required
                         placeholder="Email"
                         name="email"
                         color="default-blue"
@@ -74,15 +76,15 @@ export default class ContactForm extends Component {
                 </Field.Body>
               </Field>
               <Field horizontal>
-                <Field.Label size="normal" />
                 <Field.Body>
                   <Field>
                     <Control>
                       <Textarea
+                        required
                         type="text"
                         name="comment"
                         color="default-blue"
-                        placeholder="Nome"
+                        placeholder="Mensagem"
                         value={comment}
                         onChange={this.handleInputChange}
                       />
@@ -91,7 +93,6 @@ export default class ContactForm extends Component {
                 </Field.Body>
               </Field>
               <Field horizontal>
-                <Field.Label /> {/* Left empty for spacing  */}
                 <Field.Body>
                   <Field>
                     <Control>
