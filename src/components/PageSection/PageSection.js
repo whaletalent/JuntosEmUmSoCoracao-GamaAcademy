@@ -5,6 +5,7 @@ import ContactSection from '../SectionContact'
 import {Button} from 'rbx'
 import ImageGalery from '../ImageGalery/ImageGalery'
 import NewsSection from '../NewSection/NewsSection'
+import { FaWhatsapp } from 'react-icons/fa';
 
 //image import
 import boy from '../../assets/boy.jpg'
