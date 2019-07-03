@@ -1,0 +1,21 @@
+@import "../../App.scss";
+.footer {
+  background-color: $default-blue !important;
+  color: #fff !important;
+  .footer-menu-item {
+    margin: 10px 0;
+    cursor: pointer;
+    &:nth-child(8) {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.footer-social-link {
+  margin-right: 30px;
+}
+
+.footer-contato {
+  max-width: 300px;
+  margin: 30px 0;
+}

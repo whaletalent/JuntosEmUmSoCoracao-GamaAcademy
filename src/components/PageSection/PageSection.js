@@ -1,19 +1,19 @@
 import React, { Component, Fragment } from "react";
 import SectionContent from "../SectionContent/SectionContent";
 import ImageTitle from "../ImageTitle/ImageTitle";
-import ContactSection from '../SectionContact'
-import {Button} from 'rbx'
-import ImageGalery from '../ImageGalery/ImageGalery'
-import NewsSection from '../NewSection/NewsSection'
-import { FaWhatsapp } from 'react-icons/fa';
+import ContactSection from "../SectionContact";
+import { Button } from "rbx";
+import ImageGalery from "../ImageGalery/ImageGalery";
+import NewsSection from "../NewSection/NewsSection";
+import { FaWhatsapp } from "react-icons/fa";
 
 //image import
-import boy from '../../assets/boy.jpg'
-import baby from '../../assets/childreen.jpg'
-import donate from '../../assets/donate.jpg'
-import hands from '../../assets/hands2.jpg'
-import people from '../../assets/people-helping.jpg'
-import hands2 from '../../assets/hands.jpg'
+import boy from "../../assets/boy.jpg";
+import baby from "../../assets/childreen.jpg";
+import donate from "../../assets/donate.jpg";
+import hands from "../../assets/hands2.jpg";
+import people from "../../assets/people-helping.jpg";
+import hands2 from "../../assets/hands.jpg";
 
 export default class PageSection extends Component {
   state = {
@@ -70,31 +70,18 @@ export default class PageSection extends Component {
               <ImageTitle
                 index={content.sectionId}
                 title={content.sectionTitle}
-                subtitle={content.sectionSubtitle}
                 image={content.imageUrl}
               />
               <SectionContent textContent={content.sectionText} />
             </Fragment>
           );
         })}
-        <ImageTitle
-          index="section5"
-          title="Últimas Notícias"
-          subtitle="Acompanhe as últimas postagens"
-          image={people}
-        />
-        <NewsSection/>
+        <ImageTitle index="section5" title="Últimas Notícias" image={people} />
+        <NewsSection />
         {/* <ContactSection/> */}
-        <ImageGalery/>
-        <ImageTitle
-          index="section8"
-          title="Doações"
-          subtitle="Algum texto lorem ipsum etc pfv ajuda"
-          image={hands2}
-        >
-          <Button size="medium">
-            Saiba como
-          </Button>
+        <ImageGalery />
+        <ImageTitle index="section8" title="Doações" image={hands2}>
+          <Button size="medium">Saiba como</Button>
         </ImageTitle>
       </Fragment>
     );
