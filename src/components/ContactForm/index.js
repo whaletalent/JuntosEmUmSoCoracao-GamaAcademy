@@ -2,7 +2,6 @@ import React, { Component, Fragment } from "react";
 import { Field, Control, Input, Textarea, Button, Column } from "rbx";
 
 import ValidationContract from "../../validators/fluent-validator";
-// import { Container } from './styles';
 
 export default class ContactForm extends Component {
   state = {
