@@ -5,15 +5,22 @@
         flex-direction: row !important;
         align-items: flex-end !important;
         div{
-            position: relative;
-            width: 70%;
+            margin: 0;
+            width: 100%;
             display: flex;
             flex-direction: column;
             justify-items: flex-start;
-            padding-left: 0;
+            padding: 2em;
         }
     }
 }
 #section1{
     background-position: top !important;
 }
+#section8{
+    height: 50%;
+}
+// .responsiveImage{
+//     filter: contrast(60%) hue-rotate(-0.10turn);
+    
+// }

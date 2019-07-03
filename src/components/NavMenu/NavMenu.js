@@ -2,6 +2,8 @@ import React, {Component, Fragment} from 'react'
 import {Navbar, Container, Button} from 'rbx'
 import Scroll from 'react-scroll-to-element'
 import './NavMenu.scss'
+import logo from '../../assets/logo.png'
+
 export default class NavMenu extends Component{
     state={
         menuItems: [
@@ -21,8 +23,8 @@ export default class NavMenu extends Component{
                 <Container>
                     <Navbar.Brand>
                     <Navbar.Item>
-                        <img
-                        src="https://www.qbrobotics.com/wp-content/uploads/2018/03/sample-logo.png"
+                        <img className="logo"
+                        src={logo}
                         alt="Logo"
                         />
                     </Navbar.Item>

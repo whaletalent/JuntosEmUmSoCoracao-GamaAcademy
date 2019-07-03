@@ -18,11 +18,11 @@ export default class ImageTitle extends Component{
                 >
                     <Hero.Body>
                     <Container>
-                        <Title>{this.props.title}</Title>
-                        <Title  subtitle>
+                        <Title size="1">{this.props.title}</Title>
+                        <Title size="3" subtitle>
                             {this.props.subtitle}
                         </Title>
-                    {this.props.children}
+                        {this.props.children}
                     </Container>
                     </Hero.Body>
                 </Hero>

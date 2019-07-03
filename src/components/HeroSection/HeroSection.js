@@ -16,7 +16,7 @@ export default class HeroSection extends Component{
                     {/* Hero content: will be in the middle */}
                     <Hero.Body>
                     <Container textAlign="centered">
-                        <Title size={1}>Apoie Nossa Causa</Title>
+                        <Title as="h1">Apoie Nossa Causa</Title>
                         {/* <Title as="h2" subtitle>
                         Subtitle
                         </Title> */}
