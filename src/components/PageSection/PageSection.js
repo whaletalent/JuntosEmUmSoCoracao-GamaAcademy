@@ -1,7 +1,8 @@
 import React, { Component, Fragment } from "react";
 import SectionContent from "../SectionContent/SectionContent";
 import ImageTitle from "../ImageTitle/ImageTitle";
-
+import ContactSection from '../SectionContact'
+import NewsSection from '../NewSection/NewsSection'
 export default class PageSection extends Component {
   state = {
     contents: [
@@ -61,10 +62,17 @@ export default class PageSection extends Component {
                 image={content.imageUrl}
               />
               <SectionContent textContent={content.sectionText} />
-
             </Fragment>
           );
         })}
+        <ImageTitle
+                index="section5"
+                title="Últimas Notícias"
+                subtitle="Acompanhe as últimas postagens"
+                image={this.state.contents[1].imageUrl}
+                />
+        <NewsSection/>
+        <ContactSection/>
       </Fragment>
     );
   }

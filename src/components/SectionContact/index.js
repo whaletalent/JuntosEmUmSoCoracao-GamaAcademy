@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Card, Image, Media, Title, Content, Column } from "rbx";
+import { Card, Content, Column } from "rbx";
 
 import ImageTitle from "../ImageTitle/ImageTitle";
 import ContactForm from "../ContactForm";
