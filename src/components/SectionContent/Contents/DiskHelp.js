@@ -7,9 +7,9 @@ export default class DiskHelp extends Component{
     render(){
         return(
             <Fragment>
-                <h6>Encontre amigos solidários com coração aberto para contribuir com sua causa. Desta forma você é ajudado com doações e voluntários e nossa rede de iniciativas não para de crescer.
+                <h5>Encontre amigos solidários com coração aberto para contribuir com sua causa. Desta forma você é ajudado com doações e voluntários e nossa rede de iniciativas não para de crescer.
 Nosso projeto promove ações relacionadas a diversas frentes de atuação, como por exemplo:
-                </h6>
+                </h5>
                
                     <p><FaUtensils/> Arrecadação de alimentos</p>
                     <p><FaTshirt/> Arrecadação de roupas</p>
@@ -20,7 +20,7 @@ Nosso projeto promove ações relacionadas a diversas frentes de atuação, como
                     <p><FaHandshake/> Trabalhos voluntários</p>
                 
 
-                <h6>Quem pode ser ajudado:</h6>
+                <h5>Quem pode ser ajudado:</h5>
 
                     <p>Crianças e adolescentes</p>
                     <p>Idosos</p>
