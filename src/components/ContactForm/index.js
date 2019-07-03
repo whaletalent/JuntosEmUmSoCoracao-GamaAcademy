@@ -48,6 +48,7 @@ export default class ContactForm extends Component {
                         type="text"
                         name="name"
                         placeholder="Nome"
+                        color="default-blue"
                         value={name}
                         onChange={this.handleInputChange}
                       />
@@ -63,6 +64,7 @@ export default class ContactForm extends Component {
                       <Input
                         placeholder="Email"
                         name="email"
+                        color="default-blue"
                         valeu={email}
                         type="email"
                         onChange={this.handleInputChange}
@@ -79,6 +81,7 @@ export default class ContactForm extends Component {
                       <Textarea
                         type="text"
                         name="comment"
+                        color="default-blue"
                         placeholder="Nome"
                         value={comment}
                         onChange={this.handleInputChange}
@@ -92,7 +95,7 @@ export default class ContactForm extends Component {
                 <Field.Body>
                   <Field>
                     <Control>
-                      <Button fullwidth size="large" key="large" color="ligth">
+                      <Button color="default-blue" fullwidth size="large" key="large">
                         Enviar
                       </Button>
                     </Control>

@@ -1,7 +1,7 @@
 import React, {Component, Fragment} from 'react'
 import {Navbar, Container, Button} from 'rbx'
 import Scroll from 'react-scroll-to-element'
-
+import './NavMenu.scss'
 export default class NavMenu extends Component{
     state={
         menuItems: [
@@ -16,8 +16,7 @@ export default class NavMenu extends Component{
     render(){
         return(
             <Fragment>
-
-                <Navbar>
+                <Navbar fixed="top" color="default-blue">
                 <Container>
                     <Navbar.Brand>
                     <Navbar.Item>
