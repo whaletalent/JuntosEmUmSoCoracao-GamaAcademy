@@ -11,6 +11,7 @@ export default class NavMenu extends Component{
             {label: 'Seja um Patrocinador', section: 'section4'},
             {label: 'Notícias', section: 'section5'},
             {label: 'Contato', section: 'section6'},
+            {label: 'Galeria', section: 'section7'},
         ]
     }
     render(){

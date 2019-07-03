@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import SectionContent from "../SectionContent/SectionContent";
 import ImageTitle from "../ImageTitle/ImageTitle";
 import ContactSection from '../SectionContact'
+import ImageGalery from '../ImageGalery/ImageGalery'
 import NewsSection from '../NewSection/NewsSection'
 
 //image import
@@ -81,6 +82,7 @@ export default class PageSection extends Component {
                 />
         <NewsSection/>
         {/* <ContactSection/> */}
+        <ImageGalery/>
       </Fragment>
     );
   }
