@@ -12,6 +12,12 @@ export default class NewsSection extends Component{
                     </Image.Container>
                 </Card.Image>
                 <Card.Content>
+                    <Content>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
+                    iaculis mauris. 
+                    <br />
+                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    </Content>
                     <Media>
                     <Media.Item as="figure" align="left">
                         <Image.Container as="p" size={64}>
@@ -30,12 +36,6 @@ export default class NewsSection extends Component{
                         </Title>
                     </Media.Item>
                     </Media>
-                    <Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                    iaculis mauris. 
-                    <br />
-                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
-                    </Content>
                 </Card.Content>
                 </Card>
                 

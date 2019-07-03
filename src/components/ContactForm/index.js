@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Field, Control, Input, Textarea, Button, Column } from "rbx";
-
+import './ContactForm.scss'
 import ValidationContract from "../../validators/fluent-validator";
 
 export default class ContactForm extends Component {
@@ -36,8 +36,8 @@ export default class ContactForm extends Component {
     const { email, name, comment } = this.state;
     return (
       <Fragment>
-        <Column.Group centered>
-          <Column size="full">
+        <Column.Group centered >
+          <Column size="full" className="formCard">
             <form onSubmit={this.handleSubmit} type="post">
               <Field horizontal>
                 

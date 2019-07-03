@@ -3,6 +3,14 @@ import SectionContent from "../SectionContent/SectionContent";
 import ImageTitle from "../ImageTitle/ImageTitle";
 import ContactSection from '../SectionContact'
 import NewsSection from '../NewSection/NewsSection'
+
+//image import
+import boy from '../../assets/boy.jpg'
+import baby from '../../assets/childreen.jpg'
+import donate from '../../assets/donate.jpg'
+import hands from '../../assets/hands2.jpg'
+import people from '../../assets/people-helping.jpg'
+
 export default class PageSection extends Component {
   state = {
     contents: [
@@ -14,7 +22,7 @@ export default class PageSection extends Component {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 iaculis mauris.`,
-        imageUrl: "https://bulma.io/images/placeholders/1280x960.png"
+        imageUrl: boy
       },
       {
         sectionId: "section2",
@@ -24,7 +32,7 @@ export default class PageSection extends Component {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 iaculis mauris.`,
-        imageUrl: "https://bulma.io/images/placeholders/1280x960.png"
+        imageUrl: baby
       },
       {
         sectionId: "section3",
@@ -34,7 +42,7 @@ export default class PageSection extends Component {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 iaculis mauris.`,
-        imageUrl: "https://bulma.io/images/placeholders/1280x960.png"
+        imageUrl: donate
       },
       {
         sectionId: "section4",
@@ -45,7 +53,7 @@ export default class PageSection extends Component {
                 Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                 iaculis mauris.`,
 
-        imageUrl: "https://bulma.io/images/placeholders/1280x960.png"
+        imageUrl: hands
       }
     ]
   };
@@ -69,10 +77,10 @@ export default class PageSection extends Component {
                 index="section5"
                 title="Últimas Notícias"
                 subtitle="Acompanhe as últimas postagens"
-                image={this.state.contents[1].imageUrl}
+                image={people}
                 />
         <NewsSection/>
-        <ContactSection/>
+        {/* <ContactSection/> */}
       </Fragment>
     );
   }

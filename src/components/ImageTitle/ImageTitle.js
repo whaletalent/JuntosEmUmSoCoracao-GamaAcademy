@@ -1,17 +1,20 @@
 import React, {Component, Fragment} from 'react'
 import {Hero, Container, Title} from 'rbx'
+import './ImageTitle.scss'
 
 export default class ImageTitle extends Component{
     image ={
         backgroundImage: `url(${this.props.image})`,
-        backgroundSize: 'cover'
+        backgroundSize: 'cover',
+        backgroundPosition: 'center'
     }
     render(){
         return(
             <Fragment>
-                <Hero size="medium"
+                <Hero size="medium" className="responsiveImage"
                     id={this.props.index}
                     style={this.image}
+                    color="default-blue"
                 >
                     <Hero.Body>
                     <Container>
