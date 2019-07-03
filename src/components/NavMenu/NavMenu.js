@@ -12,8 +12,9 @@ export default class NavMenu extends Component{
             {label: 'Doações', section: 'section3'},
             {label: 'Seja um Patrocinador', section: 'section4'},
             {label: 'Notícias', section: 'section5'},
-            {label: 'Contato', section: 'section6'},
+            // {label: 'Contato', section: 'section6'},
             {label: 'Galeria', section: 'section7'},
+            {label: 'Disk Ajuda', section: 'section8'},
         ]
     }
     render(){
@@ -45,7 +46,7 @@ export default class NavMenu extends Component{
                             })
                         }
                         <Navbar.Item as="span">
-                        <Scroll type="id" element="section8">
+                        <Scroll type="id" element="section9">
                             <Button color="default-blue" inverted>
                                 <span>Doar</span>
                             </Button>
