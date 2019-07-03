@@ -1,14 +1,15 @@
-import React, {Fragment} from "react";
+import React, { Fragment } from "react";
 import "./App.scss";
-import HeroSection from './components/HeroSection/HeroSection'
-import PageSection from './components/PageSection/PageSection'
-
+import HeroSection from "./components/HeroSection/HeroSection";
+import PageSection from "./components/PageSection/PageSection";
+import ContactForm from "./components/ContactForm";
 
 function App() {
   return (
     <Fragment>
-      <HeroSection/>
-        <PageSection/>
+      <HeroSection />
+      <PageSection />
+      <ContactForm />
     </Fragment>
   );
 }
