@@ -1,5 +1,5 @@
 import React, {Component, Fragment} from 'react'
-import {Hero, Container, Title } from 'rbx'
+import {Hero, Container, Title, Button } from 'rbx'
 import NavMenu from '../NavMenu/NavMenu'
 import './heroSection.scss'
 
@@ -20,9 +20,9 @@ export default class HeroSection extends Component{
                         {/* <Title as="h2" subtitle>
                         Subtitle
                         </Title> */}
+                        <Button color="default-blue" size="large" className="botaoHero">Ajudar</Button>
                     </Container>
                     </Hero.Body>
-                
                     {/* Hero footer: Inserir caso haja necessidade */}
                     {/* <Hero.Foot>
                     <Container>
