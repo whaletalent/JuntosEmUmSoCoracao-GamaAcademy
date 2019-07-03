@@ -22,10 +22,10 @@ export default class ImageTitle extends Component{
                         <Title  subtitle>
                             {this.props.subtitle}
                         </Title>
+                    {this.props.children}
                     </Container>
                     </Hero.Body>
                 </Hero>
-                {this.props.children}
             </Fragment>
         )
     }

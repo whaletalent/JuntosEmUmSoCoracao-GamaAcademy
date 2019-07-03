@@ -43,9 +43,11 @@ export default class NavMenu extends Component{
                             })
                         }
                         <Navbar.Item as="span">
-                        <Button color="default-blue" inverted>
-                            <span>Doar</span>
-                        </Button>
+                        <Scroll type="id" element="section8">
+                            <Button color="default-blue" inverted>
+                                <span>Doar</span>
+                            </Button>
+                        </Scroll>
                         </Navbar.Item>
                     </Navbar.Segment>
                     </Navbar.Menu>

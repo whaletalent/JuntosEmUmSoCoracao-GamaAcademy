@@ -2,6 +2,7 @@ import React, { Component, Fragment } from "react";
 import SectionContent from "../SectionContent/SectionContent";
 import ImageTitle from "../ImageTitle/ImageTitle";
 import ContactSection from '../SectionContact'
+import {Button} from 'rbx'
 import ImageGalery from '../ImageGalery/ImageGalery'
 import NewsSection from '../NewSection/NewsSection'
 
@@ -11,6 +12,7 @@ import baby from '../../assets/childreen.jpg'
 import donate from '../../assets/donate.jpg'
 import hands from '../../assets/hands2.jpg'
 import people from '../../assets/people-helping.jpg'
+import hands2 from '../../assets/hands.jpg'
 
 export default class PageSection extends Component {
   state = {
@@ -75,14 +77,24 @@ export default class PageSection extends Component {
           );
         })}
         <ImageTitle
-                index="section5"
-                title="Últimas Notícias"
-                subtitle="Acompanhe as últimas postagens"
-                image={people}
-                />
+          index="section5"
+          title="Últimas Notícias"
+          subtitle="Acompanhe as últimas postagens"
+          image={people}
+        />
         <NewsSection/>
         {/* <ContactSection/> */}
         <ImageGalery/>
+        <ImageTitle
+          index="section8"
+          title="Doações"
+          subtitle="Algum texto lorem ipsum etc pfv ajuda"
+          image={hands2}
+        >
+          <Button size="large">
+            Saiba como
+          </Button>
+        </ImageTitle>
       </Fragment>
     );
   }
