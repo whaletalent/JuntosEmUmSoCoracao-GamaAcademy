@@ -1,0 +1,12 @@
+@import "../../App.scss";
+.contentCard {
+  padding-left: $padding-content;
+  padding-right: $padding-content;
+  text-align: justify;
+}
+@media screen and (max-width: 769px){
+    .contentCard {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}

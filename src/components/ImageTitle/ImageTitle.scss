@@ -1,6 +1,17 @@
 @media screen and (max-width: 769px){
     .responsiveImage{
         background-position: top !important;
+        height: 15em;
+        flex-direction: row !important;
+        align-items: flex-end !important;
+        div{
+            position: relative;
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-items: flex-start;
+            padding-left: 0;
+        }
     }
 }
 #section1{

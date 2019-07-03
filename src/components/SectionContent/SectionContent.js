@@ -1,11 +1,12 @@
 import React, { Component, Fragment } from "react";
 import { Card, Image, Media, Title, Content } from "rbx";
+import './SectionContent.scss'
 
 export default class SectionContent extends Component {
   render() {
     return (
       <Fragment>
-        <Card>
+        <Card className="contentCard">
           <Card.Content>
             <Media>
               <Media.Item as="figure" align="left">

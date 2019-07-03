@@ -8,15 +8,14 @@ export default class NewsSection extends Component{
                 <Card>
                 <Card.Image>
                     <Image.Container size="4by3">
-                    <Image src="https://bulma.io/images/placeholders/1280x960.png" />
+                    <Image src={this.props.image} />
                     </Image.Container>
                 </Card.Image>
                 <Card.Content>
                     <Content>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-                    iaculis mauris. 
+                        {this.props.content} 
                     <br />
-                    <time dateTime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                    <time dateTime="2016-1-1">{this.props.datetime}</time>
                     </Content>
                     <Media>
                     <Media.Item as="figure" align="left">
@@ -29,10 +28,10 @@ export default class NewsSection extends Component{
                     </Media.Item>
                     <Media.Item>
                         <Title as="p" size={4}>
-                        Autor
+                        {this.props.author}
                         </Title>
                         <Title as="p" subtitle size={6}>
-                        @nickname
+                        {this.props.social}
                         </Title>
                     </Media.Item>
                     </Media>
