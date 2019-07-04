@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Title } from "rbx";
+import { Title, Content } from "rbx";
 import "./styles.scss";
 
 import LogoInsta from "../../assets/instagram.png";
@@ -7,7 +7,7 @@ import LogoFacebook from "../../assets/facebook.png";
 import LogoWhatsApp from "../../assets/whatsapp.png";
 
 const SocialMediaFooter = () => (
-  <Fragment>
+  <Content className="footer-content-social">
     <Title textColor="light" size={5}>
       Acompanhe a gente
     </Title>
@@ -28,7 +28,7 @@ const SocialMediaFooter = () => (
         <img src={LogoWhatsApp} alt="logo instagram" />
       </a>
     </div>
-  </Fragment>
+  </Content>
 );
 
 export default SocialMediaFooter;

@@ -1,5 +1,13 @@
 import React, { Fragment } from "react";
-import { Footer, Section, Content, Navbar, Container, Button } from "rbx";
+import {
+  Footer,
+  Section,
+  Content,
+  Navbar,
+  Container,
+  Button,
+  Title
+} from "rbx";
 
 import MenuFooter from "./menuFooter";
 import ContatoFooter from "./contatoFooter";
@@ -20,14 +28,17 @@ const sections = {
 
 const SectionFooter = () => (
   <Fragment>
-    <Footer backgroundColor="default-blue">
-      <Section>
-        <Content>
-          <MenuFooter sections={sections} />
-          <ContatoFooter />
-          <SocialMediaFooter />
-        </Content>
-      </Section>
+    <Section backgroundColor="default-blue" textColor="light">
+      <Container className="section-footer">
+        <MenuFooter sections={sections} />
+        <ContatoFooter />
+        <SocialMediaFooter />
+      </Container>
+    </Section>
+    <Footer>
+      <Title size={5} textAlign="centered" textColor="light">
+        © Copyright 2001-2019 Copyright.com.br - All Rights Reserved - Legal
+      </Title>
     </Footer>
   </Fragment>
 );

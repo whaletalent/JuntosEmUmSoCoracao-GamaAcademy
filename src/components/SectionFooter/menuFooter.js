@@ -1,10 +1,10 @@
 import React, { Fragment } from "react";
 import Scroll from "react-scroll-to-element";
-import { Title } from "rbx";
+import { Title, Content } from "rbx";
 import "./styles.scss";
 
 const MenuFooter = ({ sections }) => (
-  <Fragment>
+  <Content className="footer-content-menu">
     <Title textColor="light" size={5}>
       Menu
     </Title>
@@ -16,7 +16,7 @@ const MenuFooter = ({ sections }) => (
         </Scroll>
       );
     })}
-  </Fragment>
+  </Content>
 );
 
 export default MenuFooter;
