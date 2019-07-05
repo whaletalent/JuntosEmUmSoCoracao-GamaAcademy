@@ -36,7 +36,7 @@ const SectionFooter = () => (
       </Container>
     </Section>
     <Footer>
-      <Title size={5} textAlign="centered" textColor="light">
+      <Title size={6} textAlign="centered" textColor="light">
         © Copyright 2001-2019 Copyright.com.br - All Rights Reserved - Legal
       </Title>
     </Footer>
