@@ -1,25 +1,34 @@
 @charset 'utf-8';
-@import url('https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Raleway&display=swap");
 @import "~bulma/sass/utilities/functions";
 @import "node_modules/react-image-gallery/styles/scss/image-gallery.scss";
 
 // add new colors
-$default-blue: #0D85FF !default;
+$default-blue: #0d85ff !default;
 $default-blue-invert: findColorInvert($default-blue) !default;
-$default-orange: #FF8A00;
-$default-yellow: #FFD600;
-$default-light: #F2F1EA;
+$default-orange: #ff8a00;
+$default-yellow: #ffd600;
+$default-light: #f2f1ea;
 
-$padding-content: 4.3em;
+$padding-content: 10em;
 
 //default font
-$default-font: 'Raleway';
+$default-font: "Raleway";
 
 $custom-colors: (
-    "default-blue": ($default-blue, $default-blue-invert),
-    "default-orange": ($default-orange),
-    "default-yellow": ($default-yellow),
-    "default-light": ($default-light)
+  "default-blue": (
+    $default-blue,
+    $default-blue-invert
+  ),
+  "default-orange": (
+    $default-orange
+  ),
+  "default-yellow": (
+    $default-yellow
+  ),
+  "default-light": (
+    $default-light
+  )
 );
 
 // $react: #00d8ff !default
@@ -32,6 +41,6 @@ $custom-colors: (
 // Import rbx style fixes (**very simple**)
 @import "~rbx/rbx";
 
-#section5{
-    margin-bottom: 1.5em;
+#section5 {
+  margin-bottom: 1.5em;
 }
