@@ -1,6 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { Card, Content } from "rbx";
-import './SectionContent.scss'
+import "./SectionContent.scss";
 
 export default class SectionContent extends Component {
   render() {
@@ -8,7 +8,7 @@ export default class SectionContent extends Component {
       <Fragment>
         <Card className="contentCard">
           <Card.Content>
-            <Content>
+            <Content size="large">
               {this.props.textContent}
               {this.props.children}
             </Content>

@@ -1,9 +1,21 @@
-.heroContainer{
-    background-image: url("../../assets/childs.jpg");
-    background-position: center;
-    background-size: cover;
-    margin-bottom: 4em;
-    h1.title{
-        font-size: 5em;
-    }
+.heroContainer {
+  background: url("../../assets/comunidade-alegre.jpg") no-repeat center center
+    fixed;
+  background-size: cover;
+  margin-bottom: 5em;
+
+  .hero-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  h1.title {
+    font-size: 6rem;
+  }
+  & .botaoHero {
+    width: 100%;
+    max-width: 415px;
+  }
+  //   & .button.is-fullwidth {
+  //     max-width: 240px;
+  //   }
 }
