@@ -38,11 +38,12 @@ export default class NavMenu extends Component {
                   );
                 })}
                 <Navbar.Item as="span">
-                  <Scroll type="id" element="section9">
-                    <Button color="default-blue" inverted>
-                      <span>Doar</span>
-                    </Button>
-                  </Scroll>
+                  <a
+                    href="https://apoia.se/juntosemumsocoracao"
+                    className="button is-default-blue is-inverted"
+                  >
+                    <span>Doar</span>
+                  </a>
                 </Navbar.Item>
               </Navbar.Segment>
             </Navbar.Menu>
