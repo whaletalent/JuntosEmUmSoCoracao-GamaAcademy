@@ -1,8 +1,8 @@
-@import '../../App.scss';
-.navbar{
-    background-color: $default-blue !important;
+@import "../../App.scss";
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
 }
-.logo{
-    filter: grayscale(100%) brightness(255);
-    height: 100%;
+.logo {
+  filter: grayscale(100%) brightness(255);
+  height: 100%;
 }
