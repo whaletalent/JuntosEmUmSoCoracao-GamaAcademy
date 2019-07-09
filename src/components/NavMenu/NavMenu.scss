@@ -6,15 +6,13 @@
 
 nav.navbar.is-fixed-top {
   background-color: rgba(0, 0, 0, 0);
-  color: #fff;
 }
 
-a.navbar-item {
-  color: #fff;
+.hero.is-default-blue .navbar-item,
+.hero.is-default-blue .navbar-link {
+  color: #fff !important;
 }
-.header-navbar--blue {
-  background: #b3bcc5 !important;
-}
+
 .logo {
   filter: grayscale(100%) brightness(255);
   height: 100%;
