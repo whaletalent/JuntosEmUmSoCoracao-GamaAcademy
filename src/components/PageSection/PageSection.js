@@ -38,9 +38,15 @@ export default class PageSection extends Component {
         sectionId: "section2",
         sectionTitle: "Seja um Voluntário",
         sectionSubtitle: "Participe conosco das nossas ações",
-        sectionText: `Somos um grupo de amigos escrevendo uma nova história e, o melhor de tudo, praticando. Venha fazer parte e ajudar a comunidade.
+        sectionText: `
+        <p>
+        Somos um grupo de amigos escrevendo uma nova história e, o melhor de tudo, praticando. Venha fazer parte e ajudar a comunidade.
 
         Conheça Nossas Ações.
+        </p>
+        <p>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1cydGhpZ8IkUn1tX_3wBGhTF81wy1ZtDEp26p2Lv1B_yFgQ/viewform?embedded=true" width="640" height="1668" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </p>
         `,
         imageUrl: sejaVoluntario
       },
@@ -66,7 +72,12 @@ export default class PageSection extends Component {
         <p>Ao apoiar a nossa ONG, além do prazer de trazer alegria para a vida de muitos, se
         você for uma pessoa jurídica a sua empresa terá um lugar especial no nosso site e
         no material de nossas ações.</p>
-        <p>Seja um patrocinador e mtransforme a vida de alguém!.</p>`,
+        <p>Seja um patrocinador e mtransforme a vida de alguém!.</p>
+       
+        <p>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2NIAXoj6tTEU-WBX5fRHw-F0VYCIlPqJLmEcc4Sw14nxQ-w/viewform?embedded=true" width="640" height="716" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
+        </p>
+        `,
 
         imageUrl: hands
       }

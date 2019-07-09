@@ -19,7 +19,7 @@ export default class NavMenu extends Component {
   render() {
     return (
       <Fragment>
-        <Navbar fixed="top" color="default-blue">
+        <Navbar fixed="top">
           <Container>
             <Navbar.Brand>
               <Navbar.Item>
