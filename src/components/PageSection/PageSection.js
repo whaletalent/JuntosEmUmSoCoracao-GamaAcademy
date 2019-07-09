@@ -44,7 +44,16 @@ export default class PageSection extends Component {
 
         Conheça Nossas Ações.
         </p>
-        <p>
+        <h3  style="
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 40px;">
+          Deixe seu contato para saber mais:
+        </h3>
+        <p style="
+        display: flex;
+        justify-content: center;
+        height: 1300px;">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe1cydGhpZ8IkUn1tX_3wBGhTF81wy1ZtDEp26p2Lv1B_yFgQ/viewform?embedded=true" width="640" height="1668" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </p>
         `,
@@ -74,7 +83,10 @@ export default class PageSection extends Component {
         no material de nossas ações.</p>
         <p>Seja um patrocinador e mtransforme a vida de alguém!.</p>
        
-        <p>
+        <p style="
+        display: flex;
+        justify-content: center;
+        height: 800px;" >
           <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSc2NIAXoj6tTEU-WBX5fRHw-F0VYCIlPqJLmEcc4Sw14nxQ-w/viewform?embedded=true" width="640" height="716" frameborder="0" marginheight="0" marginwidth="0">Carregando…</iframe>
         </p>
         `,
