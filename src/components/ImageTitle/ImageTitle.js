@@ -4,15 +4,14 @@ import "./ImageTitle.scss";
 
 export default class ImageTitle extends Component {
   image = {
-    backgroundImage: `url(${this.props.image})`,
-    backgroundSize: "cover",
-    backgroundPosition: "center"
+    background: `url(${this.props.image}) no-repeat center center`,
+    backgroundSize: "cover"
   };
   render() {
     return (
       <Fragment>
         <Hero
-          size="medium"
+          size="large"
           className="responsiveImage"
           id={this.props.index}
           style={this.image}

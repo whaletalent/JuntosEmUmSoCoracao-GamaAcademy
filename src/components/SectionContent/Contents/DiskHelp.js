@@ -9,6 +9,8 @@ import {
   FaHandshake
 } from "react-icons/fa";
 
+import "./DiskHelp.scss";
+
 export default class DiskHelp extends Component {
   render() {
     return (
@@ -19,7 +21,7 @@ export default class DiskHelp extends Component {
           rede de iniciativas não para de crescer. Nosso projeto promove ações
           relacionadas a diversas frentes de atuação, como por exemplo:
         </h5>
-        <div>
+        <div className="ajude-content">
           <div>
             <p>
               <FaUtensils /> Arrecadação de alimentos
@@ -44,13 +46,15 @@ export default class DiskHelp extends Component {
             </p>
           </div>
           <div>
-            <h5>Quem pode ser ajudado:</h5>
+            <div>
+              <h5>Quem pode ser ajudado:</h5>
 
-            <p>Crianças e adolescentes</p>
-            <p>Idosos</p>
-            <p>Comunidades</p>
-            <p>Moradores de rua</p>
-            <p>Homens e Mulheres</p>
+              <p>Crianças e adolescentes</p>
+              <p>Idosos</p>
+              <p>Comunidades</p>
+              <p>Moradores de rua</p>
+              <p>Homens e Mulheres</p>
+            </div>{" "}
           </div>
         </div>
       </Fragment>
