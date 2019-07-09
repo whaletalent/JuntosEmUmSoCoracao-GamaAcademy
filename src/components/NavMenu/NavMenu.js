@@ -16,6 +16,20 @@ export default class NavMenu extends Component {
       { label: "Galeria", section: "section7" }
     ]
   };
+
+  componentDidMount() {
+    window.addEventListener("scroll", this.listenToScroll);
+  }
+
+  listenToScroll = () => {
+    let scroll = document.body.scrollTop || document.documentElement.scrollTop;
+    let offset = document.querySelector(".is-fixed-top").clientHeight;
+    const header = document.querySelector("nav.navbar.is-fixed-top");
+
+    if (scroll > offset) header.style.backgroundColor = "#0d85ff";
+    else header.style.backgroundColor = "#00000000";
+  };
+
   render() {
     return (
       <Fragment>

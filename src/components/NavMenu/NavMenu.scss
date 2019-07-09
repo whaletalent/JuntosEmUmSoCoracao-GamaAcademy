@@ -1,6 +1,19 @@
 @import "../../App.scss";
 .navbar {
-  background-color: rgba(0, 0, 0, 0.3);
+  //background-color: rgba(0, 0, 0, 0.3);
+  // background: #0d85ff;
+}
+
+nav.navbar.is-fixed-top {
+  background-color: rgba(0, 0, 0, 0);
+  color: #fff;
+}
+
+a.navbar-item {
+  color: #fff;
+}
+.header-navbar--blue {
+  background: #b3bcc5 !important;
 }
 .logo {
   filter: grayscale(100%) brightness(255);

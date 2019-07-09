@@ -17,8 +17,11 @@
   }
 }
 
-.footer-social-link {
-  margin-right: 30px;
+.footer-social-media {
+  width: 100%;
+  max-width: 180px;
+  display: flex;
+  justify-content: space-around;
 }
 
 .footer-contato {

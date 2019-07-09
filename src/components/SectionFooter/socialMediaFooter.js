@@ -24,9 +24,6 @@ const SocialMediaFooter = () => (
       >
         <img src={LogoFacebook} alt="logo instagram" />
       </a>
-      <a href="#to-do" className="footer-social-link">
-        <img src={LogoWhatsApp} alt="logo instagram" />
-      </a>
     </div>
   </Content>
 );
