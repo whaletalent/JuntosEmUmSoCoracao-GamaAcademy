@@ -1,0 +1,15 @@
+.gallery-card {
+  padding: 50px;
+}
+
+.gallery-container-link {
+  background: url("../../assets/crianca8744s-01.png") no-repeat center center;
+
+  height: 200px;
+  background-size: "cover";
+  text-align: center;
+  .gallery-link {
+    color: #fff;
+    text-decoration: none;
+  }
+}

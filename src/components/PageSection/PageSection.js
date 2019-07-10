@@ -63,10 +63,56 @@ export default class PageSection extends Component {
         sectionId: "section3",
         sectionTitle: "Doações",
         sectionSubtitle: "",
-        sectionText: `Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                iaculis mauris.`,
+        sectionText: `
+        <p>
+        <h5>
+        Encontre amigos solidários com coração aberto para contribuir com sua
+        causa. Desta forma você é ajudado com doações e voluntários e nossa
+        rede de iniciativas não para de crescer. Nosso projeto promove ações
+        relacionadas a diversas frentes de atuação, como por exemplo:
+      </h5>
+      <div style="display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 2.5em;
+      padding: 0 20px;">
+        <div>
+          <p>
+            <FaUtensils /> Arrecadação de alimentos
+          </p>
+          <p>
+            <FaTshirt /> Arrecadação de roupas
+          </p>
+          <p>
+            <FaMitten /> Arrecadação de agasalhos e cobertores
+          </p>
+          <p>
+            <FaBaseballBall /> Arrecadação de brinquedos
+          </p>
+          <p>
+            <FaTint /> Doação de sangue
+          </p>
+          <p>
+            <FaGift /> Datas comemorativas
+          </p>
+          <p>
+            <FaHandshake /> Trabalhos voluntários
+          </p>
+        </div>
+        <div>
+          <div>
+            <h5>Quem pode ser ajudado:</h5>
+
+            <p>Crianças e adolescentes</p>
+            <p>Idosos</p>
+            <p>Comunidades</p>
+            <p>Moradores de rua</p>
+            <p>Homens e Mulheres</p>
+          </div>
+        </div>
+      </div>
+        </p>
+`,
         imageUrl: donate
       },
       {
@@ -119,18 +165,7 @@ export default class PageSection extends Component {
         })}
         <ImageTitle index="section5" title="Notícias da ONG" image={people} />
         <NewsSection />
-        {/* <ContactSection/> */}
-
         <ImageGalery />
-        <ImageTitle
-          index="section8"
-          title="Ajude"
-          subtitle=""
-          image={handsHeart}
-        />
-        <SectionContent>
-          <DiskHelp />
-        </SectionContent>
       </Fragment>
     );
   }
