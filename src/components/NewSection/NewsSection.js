@@ -5,15 +5,14 @@ import NewsCard from "../NewsCard/NewsCard";
 export default class NewsSection extends Component {
   componentDidMount() {
     fetch(
-      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@thomas_mac"
+      "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@grupojuntosemumsocoracao"
     )
       .then(res => res.json())
       .then(data => {
-        // Fillter the array  @grupojuntosemumsocoracao
-        const res = data.items; //This is an array with the content. No feed, no info about author etc..
-        const posts = res.filter(item => item.categories.length > 0); // That's the main trick* !
+        //  @grupojuntosemumsocoracao
+        const res = data.items;
+        const posts = res.filter(item => item.categories.length > 0 || res);
 
-        console.log(res);
         this.setState({ news: posts });
       });
   }
@@ -21,10 +20,11 @@ export default class NewsSection extends Component {
     news: []
   };
   render() {
+    console.log(this.state);
     return (
       <Fragment>
         <Column.Group multiline centered>
-          {this.state.news.slice(1, 4).map(e => {
+          {this.state.news.slice(0, 3).map(e => {
             return (
               <Column narrow size="one-quarter">
                 <NewsCard

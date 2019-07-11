@@ -4,12 +4,18 @@
 
 .gallery-container-link {
   background: url("../../assets/crianca8744s-01.png") no-repeat center center;
-
   height: 200px;
+  width: 100%;
   background-size: "cover";
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   .gallery-link {
     color: #fff;
     text-decoration: none;
+    width: 25px;
+    height: auto;
+    font-size: 2.7rem;
   }
 }

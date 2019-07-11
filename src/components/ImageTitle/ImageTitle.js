@@ -20,7 +20,7 @@ export default class ImageTitle extends Component {
           <Hero.Body>
             <Container>
               <Title size="2">
-                {" "}
+         
                 <span>{this.props.title}</span>{" "}
               </Title>
               <Title size="5" subtitle />
