@@ -12,7 +12,7 @@
     "react-icons": "^3.7.0",
     "react-iframe": "^1.8.0",
     "react-image-gallery": "^0.8.17",
-    "react-scripts": "3.0.1",
+    "react-scripts": "5.0.1",
     "react-scroll-to-element": "^0.2.0"
   },
   "scripts": {
